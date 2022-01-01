@@ -1,6 +1,6 @@
 import 'package:christmas/About/about.dart';
 import 'package:christmas/Home/home.dart';
-import 'package:christmas/Jeffrey/jeffrey.dart';
+import 'package:christmas/Jeffrey/jeffreyList.dart';
 
 var appRoutes = {
   '/': (context) => HomeScreen(),
