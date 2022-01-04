@@ -1,9 +1,7 @@
-import 'package:christmas/About/about.dart';
-import 'package:christmas/Home/home.dart';
-import 'package:christmas/Jeffrey/jeffreyList.dart';
+import 'package:christmas/Screens/Home/home.dart';
+import 'package:christmas/Screens/Home/Jeffrey/jeffItem.dart';
 
 var appRoutes = {
-  '/': (context) => HomeScreen(),
-  '/about': (context) => AboutScreen(),
-  '/jeffrey': (context) => JeffreyBezos(),
+  HomeScreen.id: (context) => HomeScreen(),
+  // JeffItemfScreen.id: (context) => JeffItemScreen(),
 };

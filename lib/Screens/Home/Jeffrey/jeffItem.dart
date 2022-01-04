@@ -28,7 +28,7 @@ class JeffItem extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: SizedBox(
                   child: Image.asset(
                     'Images/bezos.png',
@@ -37,7 +37,7 @@ class JeffItem extends StatelessWidget {
                 ),
               ),
               Expanded(
-                  flex: 2,
+                  flex: 1,
                   child: Center(
                     child: Text(
                       jeff.name,
@@ -63,7 +63,7 @@ class JeffItemScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    JeffData jeffData = Provider.of<JeffData>(context);
+    JeffBrain jeffData = Provider.of<JeffBrain>(context);
     print(jeff.color);
     return Scaffold(
       appBar: AppBar(
