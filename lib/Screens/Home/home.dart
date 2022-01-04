@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     print(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text(selectedStage),
       ),
       body: stage[selectedStage],
       bottomNavigationBar: BottomNavBar(setStage),
