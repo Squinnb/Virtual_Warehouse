@@ -1,6 +1,6 @@
 {
-    "name": "christmas",
-    "short_name": "christmas",
+    "name": "virtualWarehouse",
+    "short_name": "virtualWarehouse",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

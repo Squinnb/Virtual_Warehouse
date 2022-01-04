@@ -1,25 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class BottomNavBar extends StatelessWidget {
+class BottomNavBar extends StatefulWidget {
+  final Function setStage;
+
+  BottomNavBar(this.setStage);
+
+  @override
+  State<BottomNavBar> createState() => _BottomNavBarState();
+}
+
+class _BottomNavBarState extends State<BottomNavBar> {
+  final List<String> body = ["Home", "About", "Jeffrey"];
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      fixedColor: Colors.deepPurple[200],
+      type: BottomNavigationBarType.fixed,
+      currentIndex: selectedIndex,
+      selectedItemColor: Colors.deepPurple[200],
       onTap: (int i) {
-        print("This is i: $i");
-        switch (i) {
-          case 0:
-            break;
-          case 1:
-            Navigator.pushNamed(context, "/about");
-            break;
-          case 2:
-            Navigator.pushNamed(context, "/jeffrey");
-            break;
-        }
+        print("in onTap");
+        widget.setStage(body[i]);
+        selectedIndex = i;
       },
-      items: const [
+      items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(
             FontAwesomeIcons.home,

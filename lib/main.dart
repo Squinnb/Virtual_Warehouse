@@ -1,7 +1,8 @@
-import 'package:christmas/theme.dart';
+import 'Screens/Home/home.dart';
+import 'package:virtualWarehouse/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:christmas/routes.dart';
-import 'Jeffrey/jeffData.dart';
+import 'package:virtualWarehouse/routes.dart';
+import 'Screens/Home/Jeffrey/jeffData.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -13,11 +14,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => JeffData(),
+      create: (context) => JeffBrain(),
       child: MaterialApp(
-        routes: appRoutes,
         title: 'Flutter Man',
         theme: appTheme,
+        initialRoute: HomeScreen.id,
+        routes: appRoutes,
       ),
     );
   }

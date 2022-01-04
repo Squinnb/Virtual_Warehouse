@@ -1,4 +1,4 @@
-package com.example.christmas
+package com.example.virtualWarehouse
 
 import io.flutter.embedding.android.FlutterActivity
 
