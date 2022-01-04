@@ -1,7 +1,7 @@
 import 'Screens/Home/home.dart';
-import 'package:virtualWarehouse/theme.dart';
+import 'theme.dart';
+import 'routes.dart';
 import 'package:flutter/material.dart';
-import 'package:virtualWarehouse/routes.dart';
 import 'Screens/Home/Jeffrey/jeffData.dart';
 import 'package:provider/provider.dart';
 
