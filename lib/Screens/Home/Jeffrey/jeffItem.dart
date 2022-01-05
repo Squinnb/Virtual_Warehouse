@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'jeffData.dart';
+import 'jeff_data.dart';
 
 class JeffItem extends StatelessWidget {
   final Jeff jeff;

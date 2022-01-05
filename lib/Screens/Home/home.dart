@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import './Jeffrey/jeffData.dart';
+import 'Jeffrey/jeff_data.dart';
 import './Jeffrey/jeffItem.dart';
 import '../../Shared/shared.dart';
 

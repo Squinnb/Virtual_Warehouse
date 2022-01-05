@@ -2,7 +2,7 @@ import 'Screens/Home/home.dart';
 import 'theme.dart';
 import 'routes.dart';
 import 'package:flutter/material.dart';
-import 'Screens/Home/Jeffrey/jeffData.dart';
+import 'Screens/Home/Jeffrey/jeff_data.dart';
 import 'package:provider/provider.dart';
 
 void main() {
