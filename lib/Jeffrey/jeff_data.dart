@@ -6,8 +6,12 @@ class JeffBrain extends ChangeNotifier {
     Jeff(name: 'Jeff One', id: 1, color: Colors.black12),
     Jeff(name: 'Jeff Two', id: 2, color: Colors.black26),
     Jeff(name: 'Jeff Three', id: 3, color: Colors.black38),
-    Jeff(name: 'Jeff Four', id: 4, color: Colors.black45),
+    Jeff(name: 'Jeff Four', id: 4, color: Colors.white38),
     Jeff(name: 'Jeff Five', id: 5, color: Colors.black54),
+    Jeff(name: 'Jeff Six', id: 6, color: Colors.white30),
+    Jeff(name: 'Jeff Seven', id: 7, color: Colors.black87),
+    Jeff(name: 'Jeff Eight', id: 8, color: Colors.white70),
+    Jeff(name: 'Jeff Nine', id: 9, color: Colors.white60),
   ];
 
   int jeffreyPoints = 0;

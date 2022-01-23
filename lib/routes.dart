@@ -1,5 +1,6 @@
-import '../Screens/Home/home.dart';
+import 'Home/home.dart';
+import 'package:flutter/material.dart';
 
-var appRoutes = {
+Map<String, Widget Function(BuildContext)> appRoutes = {
   HomeScreen.id: (context) => HomeScreen(),
 };

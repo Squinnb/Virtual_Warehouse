@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'Jeffrey/jeff_data.dart';
-import './Jeffrey/jeffItem.dart';
+import '../Jeffrey/jeff.dart';
 import '../../Shared/shared.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -60,33 +59,11 @@ class AboutBody extends StatelessWidget {
 }
 
 class JeffreyBody extends StatelessWidget {
+  // add any of the jeffrey widgets to this body
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Consumer<JeffBrain>(builder: (context, jeffData, child) {
-        return Column(
-          children: [
-            GridView.count(
-              shrinkWrap: true,
-              crossAxisCount: 2,
-              crossAxisSpacing: 5.0,
-              primary: false,
-              padding: EdgeInsets.all(10.0),
-              children: jeffData.jeffs.map((Jeff jb) {
-                return JeffItem(jb);
-              }).toList(),
-            ),
-            Center(
-              child: ElevatedButton(
-                child: Text("Shuffle Jeffs"),
-                onPressed: () {
-                  jeffData.shuffleJeffs();
-                },
-              ),
-            ),
-          ],
-        );
-      }),
-    );
+    return Consumer<JeffBrain>(builder: (context, jeffBrain, child) {
+      return JeffGrid(jeffBrain: jeffBrain);
+    });
   }
 }

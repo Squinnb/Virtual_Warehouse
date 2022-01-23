@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import '../lib/Screens/Home/Jeffrey/jeff_data.dart';
+import '../lib/Jeffrey/jeff_data.dart';
 
 void main() {
   group('Jeffrey Points', () {
